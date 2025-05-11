@@ -12,9 +12,13 @@ Clasificar residuos automáticamente en orgánicos, inorgánicos y reciclables u
 📷 Cámara IP (celular con IP Webcam)
 
 🟢🔴🔵 3 LEDs (indicadores de tipo de basura)
+
 ⚙️ 2 servomotores (clasifican residuos)
+
 🚚 1 motor (banda transportadora)
+
 🖥️ Pantalla LCD 20x4 (muestra estado e IP)
+
 🔌 NodeMCU ESP8266 (controlador central)
 
 🔹 Software:
