@@ -6,16 +6,27 @@ Clasificador de basura automatico con python , webcam(IP) y nodemcu , servomotor
 
 ✅ 📊 Tabla de Conexiones del Sistema Clasificador de Basura
 Componente	Pin NodeMCU	Descripción	Notas
+
 📗 LED Orgánico	D7 (GPIO13)	Encendido cuando se detecta residuo orgánico	Con resistencia de 220Ω
+
 📘 LED Reciclable	D4 (GPIO2)	Encendido para reciclables	Con resistencia de 220Ω
+
 🔴 LED Inorgánico	D8 (GPIO15)	Encendido para inorgánicos	Con resistencia de 220Ω
+
 ⚙️ Servo 1	D5 (GPIO14)	Posición 0°/90°/180° según clasificación	Utilizado para ambos tipos (orgánico e inorgánico)
+
 ⚙️ Servo 2	D6 (GPIO12)	Gira solo para inorgánico	Se activa junto con Servo 1 para doble movimiento
+
 🚚 Motor Banda (L298N)	D0 (GPIO16)	Controla IN1 del L298N (encender motor)	IN2 puede ir a GND para un solo sentido
+
 🔳 Pantalla LCD 20x4 I2C	D1 (GPIO5) / D2 (GPIO4)	SCL / SDA	Requiere librería LiquidCrystal_I2C y dirección 0x27 u 0x3F
+
 📷 Cámara IP (celular)	Vía Wi-Fi	Transmite imagen a través de http://...	No conexión física; se accede desde Python por red Wi-Fi
+
 🔌 GND común	GND	Tierra para todos los módulos	Unir GND de NodeMCU, servos, L298N, LCD y fuente externa
+
 🔌 Fuente externa 5V	No directo a NodeMCU	Alimenta servos y motor vía L298N	No alimentar servos directamente desde el NodeMCU
+
 
 🧠 Consideraciones:
 No alimentes los servos desde el NodeMCU, usa una fuente externa de 5V 2A mínimo.
